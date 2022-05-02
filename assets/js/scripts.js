@@ -42,12 +42,10 @@ function calculaParede1(){
 
         do{
 
-        alert(" Para adicionar Porta e Janela Digite 1 \n" 
-             + " Para adicionar Porta Digite 2 \n" 
-             + " Para adicionar Janela Digite 3 \n"
-             + "ou Digite 0 para continuar" )
-
-        num = prompt("Digite um valor: ")
+        num = prompt(" Para adicionar Porta e Janela Digite 1 \n" 
+        + " Para adicionar Porta Digite 2 \n" 
+        + " Para adicionar Janela Digite 3 \n"
+        + "ou Digite 0 para continuar" )
 
         switch(num){
             case "0":
