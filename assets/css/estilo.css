@@ -1,0 +1,39 @@
+.fundo{
+    background-color: aquamarine;
+}
+
+.container{
+    display: flex;
+    flex-flow: row ;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.titulo2{
+    color: rgb(151, 49, 49);
+    text-align: center;
+}
+
+.titulo3{
+    color: rgb(151, 49, 49);
+    text-align: center;
+}
+
+
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.botao{
+    border-radius: 30px;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(129, 132, 129);
+}
