@@ -2,10 +2,12 @@
 var porta = 1.52
 var janela = 2.4
 
+
 /* let lataGG = 90
 let lataG = 18
 let lataM = 12.5
 let lataP = 2.5 */
+
 
 let lataGG = 0
 let lataG = 0
@@ -108,5 +110,4 @@ function calculaParede1(){
           +"Latas de 2,5L = " +Math.round(lataM)+"\n"
           +"Latas de 0,5L = " +Math.round(lataP) )
 }
- 
-    
+
