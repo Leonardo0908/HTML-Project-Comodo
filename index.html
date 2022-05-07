@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,81 @@
     <link rel="stylesheet" href="assets/css/estilo.css">
     <title>Document</title>
 </head>
-<body class="fundo" >
-    <h1 class="titulo" > Pintando seu comodo </h1>
 
-    <h2 class="titulo2" >Leia com atenção</h2>
-    <p> A parede com porta deve ter no minimo 2,20 Metros de altura </p>
-    <p> A parde não pode ter menos que 1 Metro Quadrado e nem mais que 15 Metros Quadrado</p>
+<body class="fundo">
+    <h1 class="titulo"> Pintando seu comodo </h1>
 
-    <h2 class="titulo3" > click no botão abaixo para fazer o calculo </h2>
+    <h2 class="titulo2">Leia com atenção</h2>
+    <p class="caixa"> A parede com porta deve ter no minimo 2,20 Metros de altura </p>
+    <p class="caixa"> A parede não pode ter menos que 1 Metro Quadrado e nem mais que 15 Metros Quadrado</p>
 
-    <div class="container">
-       
-        <form>
-            Largura
-            <input type="text" id="largura" name="largura"><br>
-            Altura
-            <input type="number" id="altura" name="altura"><br>
+    <h2 class="titulo2"> click no botão abaixo para fazer o calculo </h2>
 
-            <button class="botao" onclick="calculaParede1()"> calcular   </button>
-        </form>
+    <div>
 
+        <section>
+            <div class="conteiner">
+
+                <div class="caixa1"> 
+                    <label class="label" for="largura"> Largura: </label> <br>
+                    <input class="largura" type="text" id="largura" onkeyup="validaLargura() "> <br>
+                    <div id="txtLargura"></div> <br>
+
+                    <label class="label" for="altura"> Altura: </label> <br>
+                    <input class="altura" type="text" id="altura" onkeyup="validaAltura() "><br>
+                    <div id="txtAltura"></div> <br>
+
+
+                    <p class="menu"> Para adicionar Porta e Janela Digite 1 <br>
+                        Para adicionar Porta Digite 2 <br>
+                        Para adicionar Janela Digite 3 <br>
+                        ou Digite 0 para continuar </p>
+
+                    <label class="label" for="opcao"> Opção: </label> <br>
+                    <input class="opcao" type="text" id="opcao" onkeyup="validaOpcao() "><br>
+                    <div id="txtOpcao"></div> <br>
+
+                    <button class="botao" onclick="calculaParede()"> calcular </button> 
+
+                    <a class="botao2" href="index.html"> Limpar </a>
+                
+
+                </div>
+
+                <div class="caixa2">
+                    <h4>1° Parede</h4>
+                    <P class="parede1"> undefined</P>
+                    <h4>2° Parede</h4>
+                    <P class="parede2"> undefined </P>
+                    <h4>3° Parede</h4>
+                    <P class="parede3"> undefined </P>
+                    <h4>4° Parede</h4>
+                    <P class="parede4"> undefined </P>
+                    <h4>Valor final em Metros Quadrados</h4>
+                    <p class="final">final </p>
+                </div>
+
+            </div>
+            <div class="conteiner">
+                <div>
+                    <h4>Latas de 18L</h4>
+                    <p class="lataGG"> 0 </p>
+                    <h4> Latas de 3,6L </h4>
+                    <p class="lataG"> 0 </p>
+                </div>
+
+                <div class="caixa2">
+                    <h4>Latas de 2,5L</h4>
+                    <p class="lataM"> 0 </p>
+                    <h4> Latas de 0,5L</h4>
+                    <p class="lataP"> 0 </p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
