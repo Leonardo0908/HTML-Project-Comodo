@@ -26,6 +26,12 @@ function calculaParede(){
 
     parede[i] = parseFloat(largura) * parseFloat(altura)
 
+    if( parede[i] > 15){
+        alert(" A parede não pode ter mais que 15 Metros Quadrado diminua valor de altura ou largura ")
+        parede[i] = 0
+        break
+    }
+
     do{
         
       let opcao = document.querySelector(".opcao").value
@@ -84,13 +90,7 @@ function calculaParede(){
             break
         }
         
-        else if( parede[i] > 15){
-            alert(" A parede não pode ter mais que 15 Metros Quadrado ")
-            parede[i] = 0
-            por = false 
-            jan = false 
-            break
-        }
+        
         else if(jan == true && por == true && parede[i] / 2 < porta * janela){
             alert(" porta e janela deve ser no maximo 50% da area da parede")
             parede[i] = 0
@@ -123,24 +123,23 @@ function calculaParede(){
         
         if(parede[i] != 0){
             i++
-    }
-        document.querySelector(".parede1").innerHTML = parede[0].toFixed(2)
-        document.querySelector(".parede2").innerHTML = parede[1].toFixed(2)
-        document.querySelector(".parede3").innerHTML = parede[2].toFixed(2)
-        document.querySelector(".parede4").innerHTML = parede[3].toFixed(2)
-        document.querySelector(".final").innerHTML = final.toFixed(2)
-
+        }
+        
         lataGG = final / 90
         lataG = (final % 90) / 18
         lataM = ((final % 90) % 18) / 12.5
         lataP =  (((final % 90) % 18) % 12.5) % 2.5
 
-        
-
         document.querySelector(".lataGG").innerHTML = parseInt(lataGG)
         document.querySelector(".lataG").innerHTML = parseInt(lataG)
         document.querySelector(".lataM").innerHTML = parseInt(lataM)
         document.querySelector(".lataP").innerHTML = parseInt(lataP)    
+
+        document.querySelector(".final").innerHTML = final.toFixed(2)
+        document.querySelector(".parede1").innerHTML = parede[0].toFixed(2)
+        document.querySelector(".parede2").innerHTML = parede[1].toFixed(2)
+        document.querySelector(".parede3").innerHTML = parede[2].toFixed(2)
+        document.querySelector(".parede4").innerHTML = parede[3].toFixed(2)
 }
 
 

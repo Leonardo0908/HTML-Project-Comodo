@@ -24,6 +24,8 @@
 
 <h3 style="color: #C0C0C0 " > 1° Preencha os campos </h3>
 
+<p> Não é aceito número negativos e você pode calcular com "," ou "." mas na Opção não é aceito vígula nem ponto.  </p>
+
 <img src="./assets/img/img01.png" alt="Imagem 1"><br><br><br>
 
 <h3 style="color: #C0C0C0 " > 2°  Leia e aperte o botão calcular  </h3>
