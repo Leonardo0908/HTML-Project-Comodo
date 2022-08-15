@@ -1,4 +1,4 @@
-<h1 align="center" style="color: blue" > Projeto Comodo </h1>
+<h1 align="center" style="color: blue" > Projeto Cômodo </h1>
 
 <h2 align="center" style="color: #00BFFF " > ...passo a passo de como usar a aplicação... </h2>
 
